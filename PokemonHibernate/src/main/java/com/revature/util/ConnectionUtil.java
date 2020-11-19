@@ -10,7 +10,7 @@ public final class ConnectionUtil {
 	 * passing a paremter to the configure method.
 	*/
 	private static SessionFactory sessionFactory =
-			new Configuration().configure().buildSessionFactory();
+			new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 	
 	public static Session getSession() {
 		return sessionFactory.openSession();

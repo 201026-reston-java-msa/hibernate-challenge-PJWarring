@@ -15,6 +15,7 @@ public class PokemonType implements Serializable {
 	private static final long serialVersionUID = -2783359867056908045L;
 	
 	private int id;
+	
 	private String element;
 	
 	public PokemonType() {}
